@@ -1,0 +1,4 @@
+// Your signing team lives in Local.xcconfig (git-ignored, so it isn't shared), e.g.:
+//   LOCAL_DEVELOPMENT_TEAM = ABCDE12345
+// Find your team ID in Xcode → Settings → Accounts, or developer.apple.com → Membership.
+#include? "Local.xcconfig"

@@ -1,0 +1,157 @@
+[
+  {
+    "collection": "St. Louis, MO",
+    "name": "Katy Trail - St. Charles to Defiance",
+    "osm": "Katy Trail",
+    "bbox": "38.60,-90.78,38.79,-90.47"
+  },
+  {
+    "collection": "Boston, MA",
+    "name": "Minuteman Bikeway",
+    "osm": "Minuteman Bikeway",
+    "bbox": "42.38,-71.30,42.48,-71.13"
+  },
+  {
+    "collection": "Boston, MA",
+    "name": "Northern Strand Trail",
+    "osm": "Northern Strand Community Trail",
+    "bbox": "42.38,-71.10,42.50,-70.92",
+    "max_gap": 300
+  },
+  {
+    "collection": "Boston, MA",
+    "name": "Neponset River Greenway",
+    "osm": "Neponset River Greenway",
+    "bbox": "42.25,-71.15,42.32,-71.03"
+  },
+  {
+    "collection": "Chicago, IL",
+    "name": "North Shore Channel Trail",
+    "osm": "North Shore Channel Trail",
+    "bbox": "41.95,-87.75,42.07,-87.66"
+  },
+  {
+    "collection": "Chicago, IL",
+    "name": "The 606 (Bloomingdale Trail)",
+    "osm": "Bloomingdale Trail",
+    "bbox": "41.90,-87.75,41.93,-87.66"
+  },
+  {
+    "collection": "Denver, CO",
+    "name": "Clear Creek Trail",
+    "osm": "Clear Creek Trail",
+    "bbox": "39.74,-105.23,39.82,-104.97"
+  },
+  {
+    "collection": "Denver, CO",
+    "name": "Lookout Mountain Climb",
+    "osm": "Lookout Mountain Road",
+    "bbox": "39.70,-105.26,39.76,-105.20",
+    "direction": "uphill"
+  },
+  {
+    "collection": "Kansas City, MO",
+    "name": "Trolley Track Trail",
+    "osm": "Harry Wiggins Trolley Track Trail",
+    "bbox": "38.95,-94.62,39.06,-94.57"
+  },
+  {
+    "collection": "Austin, TX",
+    "name": "Lady Bird Lake (Butler Trail)",
+    "osm": "Ann & Roy Butler Hike and Bike Trail",
+    "bbox": "30.24,-97.79,30.27,-97.71"
+  },
+  {
+    "collection": "Austin, TX",
+    "name": "Southern Walnut Creek Trail",
+    "osm": "Southern Walnut Creek Trail",
+    "bbox": "30.20,-97.70,30.32,-97.60"
+  },
+  {
+    "collection": "More Cities",
+    "name": "Burke-Gilman Trail (Seattle)",
+    "osm": "Burke-Gilman Trail",
+    "bbox": "47.64,-122.40,47.78,-122.24"
+  },
+  {
+    "collection": "More Cities",
+    "name": "Capital Crescent Trail (DC)",
+    "osm": "Capital Crescent Trail",
+    "bbox": "38.90,-77.12,39.00,-77.05",
+    "direction": "uphill"
+  },
+  {
+    "collection": "Kansas City, MO",
+    "name": "Indian Creek Trail",
+    "osm": "Indian Creek Trail",
+    "bbox": "38.90,-94.75,38.98,-94.55",
+    "max_gap": 200
+  },
+  {
+    "collection": "More Cities",
+    "name": "Midtown Greenway (Minneapolis)",
+    "osm": "Midtown Greenway",
+    "bbox": "44.94,-93.34,44.97,-93.20"
+  },
+  {
+    "collection": "Denver, CO",
+    "name": "South Platte River Trail",
+    "osm": [
+      "South Platte River Trail",
+      "Mary Carter Greenway Trail"
+    ],
+    "bbox": "39.58,-105.05,39.80,-104.97",
+    "max_gap": 300,
+    "direction": "uphill"
+  },
+  {
+    "collection": "Denver, CO",
+    "name": "Cherry Creek Trail",
+    "osm": "Cherry Creek Trail",
+    "bbox": "39.60,-105.02,39.76,-104.82",
+    "max_gap": 200,
+    "direction": "uphill"
+  },
+  {
+    "collection": "Boston, MA",
+    "name": "Charles River Path - Boston to Waltham",
+    "osm": [
+      "Dr. Paul Dudley White Path",
+      "Charles River Greenway",
+      "Riverwalk"
+    ],
+    "bbox": "42.33,-71.25,42.38,-71.05",
+    "max_gap": 150
+  },
+  {
+    "collection": "Chicago, IL",
+    "name": "Lakefront Trail",
+    "osm": "Lakefront Trail",
+    "bbox": "41.73,-87.70,42.03,-87.52"
+  },
+  {
+    "collection": "New York, NY",
+    "name": "Hudson River Greenway",
+    "osm": [
+      "Battery Park City Greenway",
+      "Hudson River Greenway",
+      "Riverside Walk",
+      "Cherry Walk",
+      "Fort Washington Park Greenway"
+    ],
+    "bbox": "40.70,-74.025,40.87,-73.92",
+    "max_gap": 2500,
+    "gap_vias": [
+      [
+        40.7775,
+        -73.9902
+      ]
+    ]
+  },
+  {
+    "collection": "San Diego, CA",
+    "name": "Bayshore Bikeway - Silver Strand",
+    "osm": "Bayshore Bikeway",
+    "bbox": "32.57,-117.20,32.70,-117.11"
+  }
+]

@@ -1,0 +1,153 @@
+[
+  {
+    "collection": "Jackson Hole, WY",
+    "name": "Teton Park Road - Moose to Jenny Lake",
+    "waypoints": [
+      [
+        43.6545,
+        -110.7188
+      ],
+      [
+        43.7514,
+        -110.7225
+      ]
+    ],
+    "direction": "uphill"
+  },
+  {
+    "collection": "Jackson Hole, WY",
+    "name": "Teton Pass from Wilson",
+    "waypoints": [
+      [
+        43.4985,
+        -110.876
+      ],
+      [
+        43.497,
+        -110.955
+      ]
+    ],
+    "direction": "uphill",
+    "profile": "road",
+    "smoothing": 21,
+    "max_grade": 0.12
+  },
+  {
+    "collection": "San Diego, CA",
+    "name": "Mission Bay Loop",
+    "waypoints": [
+      [
+        32.78,
+        -117.209
+      ],
+      [
+        32.79,
+        -117.234
+      ],
+      [
+        32.783,
+        -117.247
+      ],
+      [
+        32.768,
+        -117.238
+      ],
+      [
+        32.772,
+        -117.219
+      ]
+    ],
+    "loop": true
+  },
+  {
+    "collection": "Charleston, SC",
+    "name": "Charleston Peninsula Loop",
+    "waypoints": [
+      [
+        32.77,
+        -79.93
+      ],
+      [
+        32.779,
+        -79.9255
+      ],
+      [
+        32.798,
+        -79.948
+      ],
+      [
+        32.779,
+        -79.942
+      ]
+    ],
+    "loop": true
+  },
+  {
+    "collection": "Savannah, GA",
+    "name": "Forsyth Park to Isle of Hope",
+    "waypoints": [
+      [
+        32.0705,
+        -81.096
+      ],
+      [
+        32.06,
+        -81.079
+      ],
+      [
+        32.02,
+        -81.07
+      ],
+      [
+        31.983,
+        -81.056
+      ]
+    ]
+  },
+  {
+    "collection": "New York, NY",
+    "name": "Manhattan - City Hall to Central Park",
+    "waypoints": [
+      [
+        40.7127,
+        -74.0059
+      ],
+      [
+        40.7308,
+        -73.9973
+      ],
+      [
+        40.7359,
+        -73.9906
+      ],
+      [
+        40.7411,
+        -73.9897
+      ],
+      [
+        40.758,
+        -73.9855
+      ],
+      [
+        40.7681,
+        -73.9819
+      ],
+      [
+        40.784,
+        -73.959
+      ],
+      [
+        40.796,
+        -73.952
+      ],
+      [
+        40.788,
+        -73.965
+      ],
+      [
+        40.769,
+        -73.98
+      ]
+    ]
+  }
+]

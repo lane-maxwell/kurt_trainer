@@ -1,0 +1,78 @@
+name: KineticRevival
+options:
+  bundleIdPrefix: com.kineticrevival
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+configFiles:
+  Debug: Signing.xcconfig
+  Release: Signing.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    # XcodeGen writes an empty team into every target, which wipes whatever was picked in Xcode.
+    # Point it at a variable from the git-ignored Local.xcconfig instead.
+    DEVELOPMENT_TEAM: $(LOCAL_DEVELOPMENT_TEAM)
+targets:
+  KineticRevival:
+    type: application
+    platform: iOS
+    sources:
+      - path: KineticRevival
+        excludes:
+          - Resources/Routes
+      # Copied as a folder so the bundle keeps a Routes/ subdirectory of built-in GPX files.
+      - path: KineticRevival/Resources/Routes
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kineticrevival.trainer
+        PRODUCT_NAME: KineticRevival
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Kinetic Revival
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: Kinetic Revival uses Bluetooth to connect to and control your bike trainer.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace: YES
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: KineticRevival/Resources/Info.plist
+      properties:
+        UIBackgroundModes: [bluetooth-central]
+        UIFileSharingEnabled: true
+        # iOS reads this before launching any code to decide whether to mirror the phone or give
+        # the app its own scene on an AirPlay / external display. Without it, it always mirrors.
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleExternalDisplayNonInteractive:
+              - UISceneConfigurationName: External Display
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).ExternalDisplaySceneDelegate
+  KineticRevivalTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - KineticRevivalTests
+    dependencies:
+      - target: KineticRevival
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kineticrevival.trainer.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/KineticRevival.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KineticRevival"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  KineticRevival:
+    build:
+      targets:
+        KineticRevival: all
+        KineticRevivalTests: [test]
+    test:
+      targets:
+        - KineticRevivalTests
